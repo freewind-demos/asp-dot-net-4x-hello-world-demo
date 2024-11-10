@@ -1,0 +1,27 @@
+<!-- 
+    这是访问 http://localhost:xxxx/Pages/Greeting.aspx?name=张三 时看到的内容
+    展示了输入名字"张三"后的效果
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>问候语</title>
+    <link href="../Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <form method="post" action="Greeting.aspx?name=%E5%BC%A0%E4%B8%89" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTYzNzc4OTM3MGRk" />
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9B990A35" />
+        </div>
+        
+        <div class="greeting">
+            <!-- ASP:Label 被转换为简单的文本 -->
+            <h1>Hello, 张三！</h1>
+            
+            <!-- ASP:HyperLink 被转换为标准 HTML a 标签 -->
+            <a id="lnkBack" href="/Default.aspx">返回首页</a>
+        </div>
+    </form>
+</body>
+</html> 

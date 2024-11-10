@@ -1,0 +1,26 @@
+/* 
+    这是浏览器实际收到的 CSS
+    包含了 Content/Site.css 的内容
+    ASP.NET 可能会添加一些额外的样式
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.greeting {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ASP.NET WebForms 自动添加的样式 */
+.aspNetHidden {
+    display: none;
+} 
