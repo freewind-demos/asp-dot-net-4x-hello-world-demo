@@ -1,31 +1,30 @@
-<!-- 
-    这是访问网站首页 http://localhost:xxxx/Default.aspx 时看到的内容
-    ASP.NET 会将 .aspx 处理成纯 HTML 发送给浏览器
--->
+
+
+
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Hello World 示例</title>
-    <link href="Content/Site.css" rel="stylesheet" />
-</head>
+<head><meta charset="utf-8" /><title>
+	Hello World 示例
+</title><link href="Content/Site.css" rel="stylesheet" /></head>
 <body>
-    <!-- 
-        ASP.NET WebForms 会自动为 form 添加一些隐藏字段
-        这些字段用于维护页面状态和处理回发
-    -->
-    <form method="post" action="Default.aspx" id="form1">
-        <div class="aspNetHidden">
-            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE2MTY2ODcyMjlkZA==" />
-            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
-        </div>
-        
+    
+    <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="784l/xGhtGYxPEEAsKDFcvbNP3tGlaiLyM28opyrbdocfrfhv7b0bb+/lPrDgnLw5dw3IixcONdtiUpyF1/zbPBqivTa1Z6eqihxOTxZX1A=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="uj2yrwQskahYXuMOwki75R+9NYTQsqT6aGyPaoIxMPOoz4zM3hho77GCkkNWrnFle9+Gjbp8tIBe4Edd4JqXlCL86r1V2lCzWj0jc5AqZFS+O8uXjFtOgy3xMisBrtRL4SoyOI7NgT+ogjLgMOxekQ==" />
+</div>
         <div class="form-container">
             <h2>请输入你的名字：</h2>
             <div>
-                <!-- ASP:TextBox 被转换为标准 HTML input -->
+                
                 <input name="txtName" type="text" id="txtName" />
                 
-                <!-- ASP:Button 被转换为标准 HTML input button -->
                 <input type="submit" name="btnSubmit" value="提交" id="btnSubmit" />
             </div>
         </div>

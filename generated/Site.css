@@ -1,0 +1,27 @@
+/*
+    Site.css - 网站样式表
+    
+    说明：
+    1. 定义全站通用的样式
+    2. 包含页面布局和视觉效果的CSS规则
+    3. 使用类选择器便于在不同页面复用样式
+*/
+
+/* 全局样式：应用于整个网站的body元素 */
+body {
+    font-family: Arial, sans-serif;  /* 设置字体 */
+    margin: 50px;                    /* 设置页面边距 */
+}
+
+/* 表单容器样式：用于Default.aspx的输入表单 */
+.form-container {
+    max-width: 400px;    /* 限制最大宽度 */
+    margin: 0 auto;      /* 水平居中 */
+}
+
+/* 问候语样式：用于Greeting.aspx的显示区域 */
+.greeting {
+    max-width: 400px;    /* 限制最大宽度 */
+    margin: 0 auto;      /* 水平居中 */
+    text-align: center;  /* 文本居中对齐 */
+} 

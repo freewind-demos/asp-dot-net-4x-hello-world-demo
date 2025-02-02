@@ -1,26 +1,27 @@
-<!-- 
-    这是访问 http://localhost:xxxx/Pages/Greeting.aspx?name=张三 时看到的内容
-    展示了输入名字"张三"后的效果
--->
+
+
+
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>问候语</title>
-    <link href="../Content/Site.css" rel="stylesheet" />
-</head>
+<head><meta charset="utf-8" /><title>
+	问候语
+</title><link href="../Content/Site.css" rel="stylesheet" /></head>
 <body>
-    <form method="post" action="Greeting.aspx?name=%E5%BC%A0%E4%B8%89" id="form1">
-        <div class="aspNetHidden">
-            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTYzNzc4OTM3MGRk" />
-            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9B990A35" />
-        </div>
-        
+    <form method="post" action="./Greeting.aspx?name=%e4%b8%ad%e6%96%87" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ncQwTpthkP3bsFHzlkgTEa94mr9oVu6Vgm8IGV+1fmzzBtBsBUa6g33ljcWmtEhgYO+EKq+x89LygeJfGbqdX4ij8WGwyXrwV9fbIKcq9QbkVKHdmNri0t8SJeakF95Z0KLiQ6GoBxuXYvRCbEHMiA==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="114C1A62" />
+</div>
         <div class="greeting">
-            <!-- ASP:Label 被转换为简单的文本 -->
-            <h1>Hello, 张三！</h1>
             
-            <!-- ASP:HyperLink 被转换为标准 HTML a 标签 -->
-            <a id="lnkBack" href="/Default.aspx">返回首页</a>
+            <h1><span id="lblGreeting">Hello, 中文！</span></h1>
+            
+            <a id="lnkBack" href="../Default.aspx">返回首页</a>
         </div>
     </form>
 </body>
