@@ -15,6 +15,18 @@
 4. 在输入框中输入你的名字，点击"提交"按钮
 5. 页面会跳转并显示个性化的问候语
 
+## designer.cs文件缺失
+
+Build项目时，可能会报错，提示某些designer文件缺失。解决方法是：
+
+1. 首先创建缺失的空白designer.cs文件（重要！！！）
+2. 然后对于每个aspx文件，右键点击，选择"设计器视图"，即可看到页面设计器
+3. 保存。则会自动在designer.cs文件中生成代码。
+
+重新build即可。
+
+（这个问题AI怎么都解决不了，还是得看stackoverflow: https://stackoverflow.com/a/5066638）
+
 ## 项目结构
 
     HelloWorld/
