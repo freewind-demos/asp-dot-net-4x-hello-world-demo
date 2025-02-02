@@ -16,6 +16,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="utf-8" />
     <title>问候语</title>
     <%-- 因为在子文件夹中，所以使用 ../ 回到上级目录 --%>
     <link href="../Content/Site.css" rel="stylesheet" />

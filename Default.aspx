@@ -23,6 +23,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="utf-8" />
     <title>Hello World 示例</title>
     <%-- 引用外部样式表，使用相对路径 --%>
     <link href="Content/Site.css" rel="stylesheet" />
