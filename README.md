@@ -27,6 +27,15 @@ Build项目时，可能会报错，提示某些designer文件缺失。解决方�
 
 （这个问题AI怎么都解决不了，还是得看stackoverflow: https://stackoverflow.com/a/5066638）
 
+## 中文乱码
+
+还会遇到中文乱码问题。原因是我们的文件都是用utf-8写的，但是默认设置下，server会使用英文编码。
+
+关键点修改：
+1. Web.config: 注意`fileEncoding`也要设置对，否则server会按英文编码来读文件
+    <globalization fileEncoding="utf-8" requestEncoding="utf-8" responseEncoding="utf-8" />
+2. aspx文件中，设置`<meta charset="utf-8" />`
+
 ## 项目结构
 
     HelloWorld/
